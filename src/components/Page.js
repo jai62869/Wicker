@@ -40,10 +40,10 @@ export default class Page extends React.Component {
             id = Math.max(...Object.keys(this.state.section)) + 1 ;
         }
         this.state.section[id]={
-            editor: this.props.user.username;
+            editor: this.props.user.username
         }
         this.setState({
-            section:this.state.section
+            section:this.state.sections
         });
         }
     }
